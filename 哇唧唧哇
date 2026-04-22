@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 卡片标题、描述、图片（已按你要的抽象风格配置） -->
+    <meta property="og:title" content="想和你建立男同关系" />
+    <meta property="og:description" content="置顶，给你留了一个" />
+    <meta property="og:image" content="https://p3-flow-sign.byteimg.com/tos-cn-i-ik7evvg4ik/ci/38422894857507074_1776864152335/qqlink_source.html~tplv-7xpig5zlmi-image.image?attname=qqlink_source.html&lk3s=8e244e95&rcl=2026042221222236AC2B9DE16F43CCD4AC&rrcfp=2f5a035e&x-expires=1777468971&x-signature=dRLdDn%252FxjPysMa9IyE6XlPavHgg%253D" />
+    <title>加载中...</title>
+    <style>
+        body { background: #fff; text-align: center; padding-top: 120px; font-size: 18px; color: #333; }
+        .count { font-size: 30px; color: #12b7f5; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    正在自动跳转，请稍候...
+    <div class="count" id="num">3</div>
+
+    <script>
+        // 已填入你的群号：1097681795
+        var qqGroup = "1097681795";
+        // QQ官方跳转协议（自动跳转到你的群）
+        var jumpUrl = "mqqapi://card/show_pslcard?src_type=internal&version=1&uin=" + qqGroup + "&card_type=group&source=qrcode";
+
+        // 3秒倒计时跳转（和你截图里的888333效果一致）
+        var count = 3;
+        var timer = setInterval(function() {
+            count--;
+            document.getElementById("num").innerText = count;
+            if (count <= 0) {
+                clearInterval(timer);
+                window.location.href = jumpUrl;
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
